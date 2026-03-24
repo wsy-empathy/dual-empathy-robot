@@ -67,7 +67,8 @@ export default function Home() {
       setIsLoading(true);
       const response = await axios.post(`${API_URL}/api/session/create`, { user_id: language });
       setSessionId(response.data.session_id);
-      setMessages([{ role: 'system', content: response.data.message }]);
+      // 不显示初始化消息
+      setMessages([]);
       
       // 获取topics
       const topicsResponse = await axios.get(`${API_URL}/api/topics?lang=${language}`);
@@ -92,7 +93,7 @@ export default function Home() {
       });
       
       setSelectedTopic(topicKey);
-      setMessages(prev => [...prev, { role: 'system', content: response.data.message }]);
+      // 不显示话题选择消息
       setSubtopics(response.data.subtopics.map((st: any) => ({
         key: st[0],
         ja: st[1],
@@ -117,7 +118,8 @@ export default function Home() {
         language: language
       });
       
-      setMessages(prev => [...prev, { role: 'system', content: response.data.message }]);
+      // 只显示子话题引导消息
+      setMessages([{ role: 'system', content: response.data.message }]);
       setStage('chat');
     } catch (error) {
       console.error('Error selecting subtopic:', error);
