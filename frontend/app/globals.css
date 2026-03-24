@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --aer-color: #FF6B9D;
+  --cer-color: #4A90E2;
+}
+
+body {
+  font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', 'Yu Gothic', sans-serif;
+}
+
+/* AER消息样式 */
+.message-aer {
+  background-color: #FFF0F5;
+  border-left: 4px solid var(--aer-color);
+}
+
+/* CER消息样式 */
+.message-cer {
+  background-color: #E8F4FF;
+  border-left: 4px solid var(--cer-color);
+}
+
+/* 用户消息样式 */
+.message-user {
+  background-color: #F5F5F5;
+  border-left: 4px solid #666;
+}
+
+/* 系统消息样式 */
+.message-system {
+  background-color: #FFFEF0;
+  border-left: 4px solid #FFD700;
+}

@@ -1,0 +1,31 @@
+# 二重共情ロボットシステム v2.0 - Requirements
+# FastAPI Backend for Dual Empathy Robot System
+# Updated: 2025-02 - Pure Text Dialogue System
+
+# ===== FastAPI Backend依赖 =====
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.10.0
+python-multipart>=0.0.6
+
+# ===== ONNX Runtime（CPU版本，支持所有平台）=====
+# 情感识別用（CPU推論で十分）
+onnxruntime>=1.20.0
+
+# ===== Transformers库（用于tokenizer等）=====
+transformers>=4.30.0
+fugashi>=1.2.0
+ipadic>=1.0.0
+sentencepiece>=0.1.99
+
+# ===== Gemini API =====
+google-generativeai==0.3.2
+
+# ===== 其他工具 =====
+numpy>=1.24.0
+
+# ===== 注意事項 =====
+# 1. TTS/ASRは削除済み（純文本对话システム）
+# 2. GradioUIは削除（FastAPI + Next.js/Vercelに置換）
+# 3. GPU依赖は不要（ONNXはCPUで十分速い、LLMはGemini API）
+# 4. RAG依存は除去（textファイル直読方式に変更）

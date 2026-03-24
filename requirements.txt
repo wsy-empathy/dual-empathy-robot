@@ -1,0 +1,21 @@
+# Vercel Python Runtime Requirements
+# 核心依赖
+fastapi==0.108.0
+pydantic==2.5.0
+openai==1.6.1
+
+# ONNX Runtime (CPU版本，Vercel不支持GPU)
+onnxruntime==1.16.3
+
+# HuggingFace
+transformers==4.36.0
+
+# 其他依赖
+numpy>=1.24.0
+aiofiles==23.2.1
+python-multipart==0.0.6
+
+# 注意：Vercel Serverless Functions有限制
+# - 不支持CUDA/GPU
+# - 函数大小限制50MB
+# - 执行时间限制10秒（Pro版60秒）

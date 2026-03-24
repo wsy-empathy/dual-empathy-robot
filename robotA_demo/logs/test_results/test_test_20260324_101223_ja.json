@@ -1,0 +1,174 @@
+{
+  "session_id": "test_20260324_101223",
+  "language": "ja",
+  "topic": "financial",
+  "subtopic": "financial_cost_burden",
+  "turns": [
+    {
+      "stage": "aer_1",
+      "user": "最近、学費とアルバイトのバランスで悩んでいます。",
+      "agent": "AER",
+      "response": "[生成失败: object str can't be used in 'await' expression]",
+      "emotion": {
+        "label": "neutral",
+        "score": 0.5,
+        "details": {}
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_2",
+      "user": "はい、学費を自分で稼がないといけないので、週4日バイトしているんですが、勉強時間が足りなくて...",
+      "agent": "AER",
+      "response": "[生成失败: object str can't be used in 'await' expression]",
+      "emotion": {
+        "label": "neutral",
+        "score": 0.5,
+        "details": {}
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_3",
+      "user": "親からの援助は少しだけで、基本的に自分で学費を払っています。疲れて授業に集中できないこともあります。",
+      "agent": "AER",
+      "response": "[生成失败: object str can't be used in 'await' expression]",
+      "emotion": {
+        "label": "neutral",
+        "score": 0.5,
+        "details": {}
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_transition",
+      "user": "そうですね。何か方法があればいいんですけど。",
+      "agent": "AER",
+      "response": "[生成失败: object str can't be used in 'await' expression]",
+      "emotion": {
+        "label": "neutral",
+        "score": 0.5,
+        "details": {}
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_1",
+      "user": "それは考えたことありませんでした。調べてみます。",
+      "agent": "CER",
+      "response": "[生成失败: object str can't be used in 'await' expression]",
+      "emotion": {
+        "label": "neutral",
+        "score": 0.5,
+        "details": {}
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_2",
+      "user": "ありがとうございます。相談してよかったです。",
+      "agent": "CER",
+      "response": "[生成失败: object str can't be used in 'await' expression]",
+      "emotion": {
+        "label": "neutral",
+        "score": 0.5,
+        "details": {}
+      },
+      "rag_used": false,
+      "quality_issues": []
+    }
+  ],
+  "quality_analysis": {
+    "naturalness_score": 60.0,
+    "repetition_issues": [],
+    "emotion_tracking": [
+      {
+        "stage": "aer_1",
+        "emotion": "neutral",
+        "score": 0.5
+      },
+      {
+        "stage": "aer_2",
+        "emotion": "neutral",
+        "score": 0.5
+      },
+      {
+        "stage": "aer_3",
+        "emotion": "neutral",
+        "score": 0.5
+      },
+      {
+        "stage": "aer_transition",
+        "emotion": "neutral",
+        "score": 0.5
+      },
+      {
+        "stage": "cer_1",
+        "emotion": "neutral",
+        "score": 0.5
+      },
+      {
+        "stage": "cer_2",
+        "emotion": "neutral",
+        "score": 0.5
+      }
+    ],
+    "rag_usage": [
+      {
+        "stage": "aer_1",
+        "has_content": false
+      },
+      {
+        "stage": "aer_2",
+        "has_content": false
+      },
+      {
+        "stage": "aer_3",
+        "has_content": false
+      },
+      {
+        "stage": "aer_transition",
+        "has_content": false
+      },
+      {
+        "stage": "cer_1",
+        "has_content": false
+      },
+      {
+        "stage": "cer_2",
+        "has_content": false
+      }
+    ],
+    "stage_completion": [
+      {
+        "stage": "aer_1",
+        "completed": true
+      },
+      {
+        "stage": "aer_2",
+        "completed": true
+      },
+      {
+        "stage": "aer_3",
+        "completed": true
+      },
+      {
+        "stage": "aer_transition",
+        "completed": true
+      },
+      {
+        "stage": "cer_1",
+        "completed": true
+      },
+      {
+        "stage": "cer_2",
+        "completed": true
+      }
+    ]
+  }
+}

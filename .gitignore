@@ -1,0 +1,72 @@
+# 项目依赖和环境
+node_modules/
+.pnp
+.pnp.js
+
+# Python虚拟环境
+.venv/
+venv/
+ENV/
+env/
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 测试和覆盖率
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Next.js
+.next/
+out/
+build/
+
+# 生产
+dist/
+*.egg-info/
+
+# 环境变量
+.env
+.env.local
+.env*.local
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+logs/*.jsonl
+logs/test_results/*.json
+logs/test_results/*.md
+
+# Vercel
+.vercel
+
+# 模型和数据（可选）
+robotA_demo/models/onnx/*.onnx
+robotA_demo/recordings/*
+robotA_demo/outputs/*
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+
+# 历史记录
+.history/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts

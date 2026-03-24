@@ -1,0 +1,394 @@
+{
+  "session_id": "test_20260324_104826",
+  "language": "ja",
+  "topic": "financial",
+  "subtopic": "cost_burden",
+  "turns": [
+    {
+      "stage": "aer_1",
+      "user": "最近、学費とアルバイトのバランスで悩んでいます。",
+      "agent": "AER",
+      "response": "悩ましい気持ち、伝わってきます。その悩みの中で、今どんなことを感じていますか？",
+      "emotion": {
+        "label": "disgust",
+        "score": 0.8218321204185486,
+        "details": {
+          "emo8_dist": [
+            0.010348591022193432,
+            0.04497160017490387,
+            0.009464227594435215,
+            0.012823290191590786,
+            0.05696694180369377,
+            0.02392466366291046,
+            0.8218321204185486,
+            0.01966858096420765
+          ],
+          "emo_top": "disgust",
+          "emo_conf": 0.8218321204185486,
+          "emo_score": 0.8218321204185486,
+          "elapsed_time": 0.07785725593566895
+        }
+      },
+      "rag_used": true,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_2",
+      "user": "はい、学費を自分で稼がないといけないので、週4日バイトしているんですが、勉強時間が足りなくて...",
+      "agent": "AER",
+      "response": "大変な状況で、本当によく頑張っていますね。心の中では今、どんな思いを抱えていますか？",
+      "emotion": {
+        "label": "sadness",
+        "score": 0.26646947860717773,
+        "details": {
+          "emo8_dist": [
+            0.07234717160463333,
+            0.26646947860717773,
+            0.1800343245267868,
+            0.04977390170097351,
+            0.10039231926202774,
+            0.1101340726017952,
+            0.10675224661827087,
+            0.11409644037485123
+          ],
+          "emo_top": "sadness",
+          "emo_conf": 0.26646947860717773,
+          "emo_score": 0.26646947860717773,
+          "elapsed_time": 0.13467812538146973
+        }
+      },
+      "rag_used": true,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_3",
+      "user": "親からの援助は少しだけで、基本的に自分で学費を払っています。疲れて授業に集中できないこともあります。",
+      "agent": "AER",
+      "response": "あなたは一人じゃないよ。その疲れの中で、今、一番大きい気持ちは何かな？",
+      "emotion": {
+        "label": "joy",
+        "score": 0.2847194969654083,
+        "details": {
+          "emo8_dist": [
+            0.2847194969654083,
+            0.11141324788331985,
+            0.18821841478347778,
+            0.06491758674383163,
+            0.08220739662647247,
+            0.07499401271343231,
+            0.09076455980539322,
+            0.10276530683040619
+          ],
+          "emo_top": "joy",
+          "emo_conf": 0.2847194969654083,
+          "emo_score": 0.2847194969654083,
+          "elapsed_time": 0.09493589401245117
+        }
+      },
+      "rag_used": true,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_transition",
+      "user": "そうですね。何か方法があればいいんですけど。",
+      "agent": "AER",
+      "response": "気持ちを聞かせてくれてありがとう。もしよければ、別の視点から一緒に考えてみませんか？",
+      "emotion": {
+        "label": "joy",
+        "score": 0.34788140654563904,
+        "details": {
+          "emo8_dist": [
+            0.34788140654563904,
+            0.0959978699684143,
+            0.14070318639278412,
+            0.07878869771957397,
+            0.07889153808355331,
+            0.06991636008024216,
+            0.08049614727497101,
+            0.10732478648424149
+          ],
+          "emo_top": "joy",
+          "emo_conf": 0.34788140654563904,
+          "emo_score": 0.34788140654563904,
+          "elapsed_time": 0.1904010772705078
+        }
+      },
+      "rag_used": true,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_1",
+      "user": "はい、このままだと学業が疎かになってしまいそうで心配です。",
+      "agent": "CER",
+      "response": "学費を稼ぎながら勉強も頑張ろうとして、時間が足りない状況なんだね。",
+      "emotion": {
+        "label": "surprise",
+        "score": 0.2026398479938507,
+        "details": {
+          "emo8_dist": [
+            0.04954409971833229,
+            0.20062099397182465,
+            0.08423017710447311,
+            0.2026398479938507,
+            0.13187041878700256,
+            0.11235544830560684,
+            0.11412905901670456,
+            0.10460995137691498
+          ],
+          "emo_top": "surprise",
+          "emo_conf": 0.2026398479938507,
+          "emo_score": 0.2026398479938507,
+          "elapsed_time": 0.026215076446533203
+        }
+      },
+      "rag_used": true,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_2",
+      "user": "確かに、時間をうまく使えれば両立できるかもしれません。",
+      "agent": "CER",
+      "response": "もしかして、学業をちゃんとやり遂げたいからこそ、時間が足りない現状に焦りを感じているのかな？",
+      "emotion": {
+        "label": "sadness",
+        "score": 0.99724280834198,
+        "details": {
+          "emo8_dist": [
+            0.00021466388716362417,
+            0.99724280834198,
+            0.00032436876790598035,
+            0.00024155667051672935,
+            0.00039523234590888023,
+            0.0005301503115333617,
+            0.0008934103534556925,
+            0.00015784577408339828
+          ],
+          "emo_top": "sadness",
+          "emo_conf": 0.99724280834198,
+          "emo_score": 0.99724280834198,
+          "elapsed_time": 0.15689849853515625
+        }
+      },
+      "rag_used": true,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_3",
+      "user": "奨学金や学内アルバイトは考えたことありませんでした。調べてみます。",
+      "agent": "CER",
+      "response": "時間のやりくりが一番の課題なんだね。まず学生課に「経済支援の相談」で予約を入れてみよう。明日、電話かメールで予約するだけでOK。1つでも新しい情報が得られたら成功です。",
+      "emotion": {
+        "label": "anticipation",
+        "score": 0.260347843170166,
+        "details": {
+          "emo8_dist": [
+            0.07277479767799377,
+            0.156427264213562,
+            0.260347843170166,
+            0.04729197546839714,
+            0.15095052123069763,
+            0.10843401402235031,
+            0.10834116488695145,
+            0.09543237835168839
+          ],
+          "emo_top": "anticipation",
+          "emo_conf": 0.260347843170166,
+          "emo_score": 0.260347843170166,
+          "elapsed_time": 0.2180478572845459
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_closing_1",
+      "user": "はい、新しい選択肢が見えて少し希望が持てました。",
+      "agent": "AER",
+      "response": "希望が持てたんですね。CERからの提案、どう感じましたか？",
+      "emotion": {
+        "label": "sadness",
+        "score": 0.5833920836448669,
+        "details": {
+          "emo8_dist": [
+            0.055206432938575745,
+            0.5833920836448669,
+            0.05320079252123833,
+            0.05648598447442055,
+            0.061524417251348495,
+            0.0678061693906784,
+            0.07126984745264053,
+            0.051114343106746674
+          ],
+          "emo_top": "sadness",
+          "emo_conf": 0.5833920836448669,
+          "emo_score": 0.5833920836448669,
+          "elapsed_time": 0.1013031005859375
+        }
+      },
+      "rag_used": true,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_closing_2",
+      "user": "ありがとうございます。相談してよかったです。",
+      "agent": "AER",
+      "response": "そう言ってもらえて嬉しいです。またいつでも話に来てくださいね。",
+      "emotion": {
+        "label": "trust",
+        "score": 0.16745491325855255,
+        "details": {
+          "emo8_dist": [
+            0.1482459455728531,
+            0.11400125920772552,
+            0.09723320603370667,
+            0.12148140370845795,
+            0.12224267423152924,
+            0.10424960404634476,
+            0.12509100139141083,
+            0.16745491325855255
+          ],
+          "emo_top": "trust",
+          "emo_conf": 0.16745491325855255,
+          "emo_score": 0.16745491325855255,
+          "elapsed_time": 0.09748578071594238
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    }
+  ],
+  "quality_analysis": {
+    "naturalness_score": 100,
+    "repetition_issues": [],
+    "emotion_tracking": [
+      {
+        "stage": "aer_1",
+        "emotion": "disgust",
+        "score": 0.8218321204185486
+      },
+      {
+        "stage": "aer_2",
+        "emotion": "sadness",
+        "score": 0.26646947860717773
+      },
+      {
+        "stage": "aer_3",
+        "emotion": "joy",
+        "score": 0.2847194969654083
+      },
+      {
+        "stage": "aer_transition",
+        "emotion": "joy",
+        "score": 0.34788140654563904
+      },
+      {
+        "stage": "cer_1",
+        "emotion": "surprise",
+        "score": 0.2026398479938507
+      },
+      {
+        "stage": "cer_2",
+        "emotion": "sadness",
+        "score": 0.99724280834198
+      },
+      {
+        "stage": "cer_3",
+        "emotion": "anticipation",
+        "score": 0.260347843170166
+      },
+      {
+        "stage": "aer_closing_1",
+        "emotion": "sadness",
+        "score": 0.5833920836448669
+      },
+      {
+        "stage": "aer_closing_2",
+        "emotion": "trust",
+        "score": 0.16745491325855255
+      }
+    ],
+    "rag_usage": [
+      {
+        "stage": "aer_1",
+        "content_length": 125,
+        "has_content": true
+      },
+      {
+        "stage": "aer_2",
+        "content_length": 111,
+        "has_content": true
+      },
+      {
+        "stage": "aer_3",
+        "content_length": 111,
+        "has_content": true
+      },
+      {
+        "stage": "aer_transition",
+        "content_length": 93,
+        "has_content": true
+      },
+      {
+        "stage": "cer_1",
+        "content_length": 37,
+        "has_content": true
+      },
+      {
+        "stage": "cer_2",
+        "content_length": 32,
+        "has_content": true
+      },
+      {
+        "stage": "cer_3",
+        "has_content": false
+      },
+      {
+        "stage": "aer_closing_1",
+        "content_length": 60,
+        "has_content": true
+      },
+      {
+        "stage": "aer_closing_2",
+        "has_content": false
+      }
+    ],
+    "stage_completion": [
+      {
+        "stage": "aer_1",
+        "completed": true
+      },
+      {
+        "stage": "aer_2",
+        "completed": true
+      },
+      {
+        "stage": "aer_3",
+        "completed": true
+      },
+      {
+        "stage": "aer_transition",
+        "completed": true
+      },
+      {
+        "stage": "cer_1",
+        "completed": true
+      },
+      {
+        "stage": "cer_2",
+        "completed": true
+      },
+      {
+        "stage": "cer_3",
+        "completed": true
+      },
+      {
+        "stage": "aer_closing_1",
+        "completed": true
+      },
+      {
+        "stage": "aer_closing_2",
+        "completed": true
+      }
+    ]
+  }
+}

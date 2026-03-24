@@ -1,0 +1,387 @@
+{
+  "session_id": "test_20260324_102938",
+  "language": "ja",
+  "topic": "academic",
+  "subtopic": "exam_anxiety",
+  "turns": [
+    {
+      "stage": "aer_1",
+      "user": "来週、数学の期末試験があって、とても不安です。勉強してもなかなか点数が上がらなくて...",
+      "agent": "AER",
+      "response": "不安な気持ち、よく伝わってきます。今どんな感じ？",
+      "emotion": {
+        "label": "joy",
+        "score": 0.9050251841545105,
+        "details": {
+          "emo8_dist": [
+            0.9050251841545105,
+            0.02093415893614292,
+            0.012386316433548927,
+            0.009293641895055771,
+            0.009060519747436047,
+            0.01152699813246727,
+            0.013498428277671337,
+            0.018274733796715736
+          ],
+          "emo_top": "joy",
+          "emo_conf": 0.9050251841545105,
+          "emo_score": 0.9050251841545105,
+          "elapsed_time": 0.23933982849121094
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_2",
+      "user": "はい、特に応用問題が全然できなくて、焦っています。",
+      "agent": "AER",
+      "response": "焦る気持ち、大変ですよね。その気持ち、もう少し聞いてもいい？",
+      "emotion": {
+        "label": "surprise",
+        "score": 0.43877336382865906,
+        "details": {
+          "emo8_dist": [
+            0.10808075219392776,
+            0.1057661697268486,
+            0.04125038534402847,
+            0.43877336382865906,
+            0.056371740996837616,
+            0.11619150638580322,
+            0.06680549681186676,
+            0.06676054000854492
+          ],
+          "emo_top": "surprise",
+          "emo_conf": 0.43877336382865906,
+          "emo_score": 0.43877336382865906,
+          "elapsed_time": 0.07032895088195801
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_3",
+      "user": "前回の中間試験では、基礎問題は解けたんですが、応用で大きく失点しました。時間も足りなかったです。",
+      "agent": "AER",
+      "response": "悔しい思いをしたんですね。その時の気持ち、もう少し教えてもらえますか？",
+      "emotion": {
+        "label": "sadness",
+        "score": 0.5522454380989075,
+        "details": {
+          "emo8_dist": [
+            0.04013548046350479,
+            0.5522454380989075,
+            0.04854108765721321,
+            0.04112458974123001,
+            0.06910762935876846,
+            0.10276063531637192,
+            0.09048875421285629,
+            0.05559635907411575
+          ],
+          "emo_top": "sadness",
+          "emo_conf": 0.5522454380989075,
+          "emo_score": 0.5522454380989075,
+          "elapsed_time": 0.03525948524475098
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_transition",
+      "user": "そうですね。でも具体的にどうすればいいのか分からなくて。",
+      "agent": "AER",
+      "response": "どうしたらいいか分からなくて、困ってしまいますよね。もしよかったら、その気持ちを整理しながら、一緒に考えられることがあるかもしれません。",
+      "emotion": {
+        "label": "anticipation",
+        "score": 0.8482803702354431,
+        "details": {
+          "emo8_dist": [
+            0.035548094660043716,
+            0.029891498386859894,
+            0.8482803702354431,
+            0.008489496074616909,
+            0.01959378644824028,
+            0.017805205658078194,
+            0.017406338825821877,
+            0.022985262796282768
+          ],
+          "emo_top": "anticipation",
+          "emo_conf": 0.8482803702354431,
+          "emo_score": 0.8482803702354431,
+          "elapsed_time": 0.11549568176269531
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_1",
+      "user": "はい、そうなんです。完璧にやろうとしすぎているかもしれません。",
+      "agent": "CER",
+      "response": "完璧を目指すあまり、かえって身動きが取れなくなっている状況なんだね。",
+      "emotion": {
+        "label": "joy",
+        "score": 0.7530158758163452,
+        "details": {
+          "emo8_dist": [
+            0.7530158758163452,
+            0.03086029924452305,
+            0.05003862828016281,
+            0.02382562682032585,
+            0.03301059827208519,
+            0.01934005506336689,
+            0.0351286344230175,
+            0.05478033050894737
+          ],
+          "emo_top": "joy",
+          "emo_conf": 0.7530158758163452,
+          "emo_score": 0.7530158758163452,
+          "elapsed_time": 0.12382984161376953
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_2",
+      "user": "確かに、どこまでやれば十分か分からなくて、どんどん不安になります。",
+      "agent": "CER",
+      "response": "もしかして、「ちゃんとやる」という自分との約束を守りたいからこそ、そのゴールがどこにあるか分からなくて不安になっているのかな？",
+      "emotion": {
+        "label": "sadness",
+        "score": 0.40414419770240784,
+        "details": {
+          "emo8_dist": [
+            0.1317518949508667,
+            0.40414419770240784,
+            0.060523707419633865,
+            0.04350936785340309,
+            0.0870903804898262,
+            0.07829499989748001,
+            0.11475168168544769,
+            0.0799337774515152
+          ],
+          "emo_top": "sadness",
+          "emo_conf": 0.40414419770240784,
+          "emo_score": 0.40414419770240784,
+          "elapsed_time": 0.21342039108276367
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_3",
+      "user": "なるほど、最低ラインを設定するんですね。それなら試してみます。",
+      "agent": "CER",
+      "response": "「完璧」という高い壁を「最低限の完了」に置き換えることが、今の不安を解消する鍵だよ。今日やるべきことを書き出して「これだけは終わらせる」という3つだけに印をつけ、それが終わったら今日の作業を終了にしよう。",
+      "emotion": {
+        "label": "anticipation",
+        "score": 0.1973382979631424,
+        "details": {
+          "emo8_dist": [
+            0.07977528870105743,
+            0.1892388015985489,
+            0.1973382979631424,
+            0.0479842871427536,
+            0.13419635593891144,
+            0.11680033057928085,
+            0.14566949009895325,
+            0.08899720013141632
+          ],
+          "emo_top": "anticipation",
+          "emo_conf": 0.1973382979631424,
+          "emo_score": 0.1973382979631424,
+          "elapsed_time": 0.07742953300476074
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_closing_1",
+      "user": "はい、具体的な方法があると分かって、少し安心しました。",
+      "agent": "AER",
+      "response": "よかった。少し気持ちが楽になったみたいで、私も嬉しいよ。",
+      "emotion": {
+        "label": "sadness",
+        "score": 0.2087407112121582,
+        "details": {
+          "emo8_dist": [
+            0.1783418506383896,
+            0.2087407112121582,
+            0.14810879528522491,
+            0.05696927756071091,
+            0.0906524658203125,
+            0.09558966755867004,
+            0.10990464687347412,
+            0.11169254779815674
+          ],
+          "emo_top": "sadness",
+          "emo_conf": 0.2087407112121582,
+          "emo_score": 0.2087407112121582,
+          "elapsed_time": 0.11018538475036621
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_closing_2",
+      "user": "ありがとうございます。少しずつやってみます。",
+      "agent": "AER",
+      "response": "うん、その意気だよ。いつでも応援してるからね。",
+      "emotion": {
+        "label": "joy",
+        "score": 0.39127156138420105,
+        "details": {
+          "emo8_dist": [
+            0.39127156138420105,
+            0.11103799939155579,
+            0.16636961698532104,
+            0.04287862032651901,
+            0.07619588822126389,
+            0.05896727368235588,
+            0.05912604555487633,
+            0.09415303170681
+          ],
+          "emo_top": "joy",
+          "emo_conf": 0.39127156138420105,
+          "emo_score": 0.39127156138420105,
+          "elapsed_time": 0.13768982887268066
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    }
+  ],
+  "quality_analysis": {
+    "naturalness_score": 90.0,
+    "repetition_issues": [],
+    "emotion_tracking": [
+      {
+        "stage": "aer_1",
+        "emotion": "joy",
+        "score": 0.9050251841545105
+      },
+      {
+        "stage": "aer_2",
+        "emotion": "surprise",
+        "score": 0.43877336382865906
+      },
+      {
+        "stage": "aer_3",
+        "emotion": "sadness",
+        "score": 0.5522454380989075
+      },
+      {
+        "stage": "aer_transition",
+        "emotion": "anticipation",
+        "score": 0.8482803702354431
+      },
+      {
+        "stage": "cer_1",
+        "emotion": "joy",
+        "score": 0.7530158758163452
+      },
+      {
+        "stage": "cer_2",
+        "emotion": "sadness",
+        "score": 0.40414419770240784
+      },
+      {
+        "stage": "cer_3",
+        "emotion": "anticipation",
+        "score": 0.1973382979631424
+      },
+      {
+        "stage": "aer_closing_1",
+        "emotion": "sadness",
+        "score": 0.2087407112121582
+      },
+      {
+        "stage": "aer_closing_2",
+        "emotion": "joy",
+        "score": 0.39127156138420105
+      }
+    ],
+    "rag_usage": [
+      {
+        "stage": "aer_1",
+        "has_content": false
+      },
+      {
+        "stage": "aer_2",
+        "has_content": false
+      },
+      {
+        "stage": "aer_3",
+        "has_content": false
+      },
+      {
+        "stage": "aer_transition",
+        "has_content": false
+      },
+      {
+        "stage": "cer_1",
+        "has_content": false
+      },
+      {
+        "stage": "cer_2",
+        "has_content": false
+      },
+      {
+        "stage": "cer_3",
+        "has_content": false
+      },
+      {
+        "stage": "aer_closing_1",
+        "has_content": false
+      },
+      {
+        "stage": "aer_closing_2",
+        "has_content": false
+      }
+    ],
+    "stage_completion": [
+      {
+        "stage": "aer_1",
+        "completed": true
+      },
+      {
+        "stage": "aer_2",
+        "completed": true
+      },
+      {
+        "stage": "aer_3",
+        "completed": true
+      },
+      {
+        "stage": "aer_transition",
+        "completed": true
+      },
+      {
+        "stage": "cer_1",
+        "completed": true
+      },
+      {
+        "stage": "cer_2",
+        "completed": true
+      },
+      {
+        "stage": "cer_3",
+        "completed": true
+      },
+      {
+        "stage": "aer_closing_1",
+        "completed": true
+      },
+      {
+        "stage": "aer_closing_2",
+        "completed": true
+      }
+    ]
+  }
+}

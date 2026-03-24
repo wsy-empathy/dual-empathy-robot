@@ -1,0 +1,264 @@
+{
+  "session_id": "test_20260324_102259",
+  "language": "zh",
+  "topic": "financial",
+  "subtopic": "cost_burden",
+  "turns": [
+    {
+      "stage": "aer_1",
+      "user": "最近在学费和打工之间很纠结。",
+      "agent": "AER",
+      "response": "听起来这种左右为难的感觉挺让人心累的。现在心里什么感觉？",
+      "emotion": {
+        "label": "sadness",
+        "score": 0.3864121437072754,
+        "details": {
+          "emo8_dist": [
+            0.17198516428470612,
+            0.3864121437072754,
+            0.048790495842695236,
+            0.030435115098953247,
+            0.055342406034469604,
+            0.09084229171276093,
+            0.1393425017595291,
+            0.07684990018606186
+          ],
+          "emo_top": "sadness",
+          "emo_conf": 0.3864121437072754,
+          "emo_score": 0.3864121437072754,
+          "elapsed_time": 0.10714030265808105
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_2",
+      "user": "对，学费要自己赚，所以每周打工四天，但学习时间不够...",
+      "agent": "AER",
+      "response": "挺不容易的，要一个人担起这么多。心里怎么样？",
+      "emotion": {
+        "label": "anticipation",
+        "score": 0.7763853669166565,
+        "details": {
+          "emo8_dist": [
+            0.026905015110969543,
+            0.04908469319343567,
+            0.7763853669166565,
+            0.011661272495985031,
+            0.04547949135303497,
+            0.024860789999365807,
+            0.03522317856550217,
+            0.03040013462305069
+          ],
+          "emo_top": "anticipation",
+          "emo_conf": 0.7763853669166565,
+          "emo_score": 0.7763853669166565,
+          "elapsed_time": 0.11040973663330078
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_3",
+      "user": "父母只能给一点点支持，学费基本要自己付。有时候太累了，上课都没法集中精神。",
+      "agent": "AER",
+      "response": "听起来真的好累，感觉精力都要被耗尽了。现在心里是什么感觉呢？",
+      "emotion": {
+        "label": "anticipation",
+        "score": 0.506657063961029,
+        "details": {
+          "emo8_dist": [
+            0.05864176154136658,
+            0.13876187801361084,
+            0.506657063961029,
+            0.022179491817951202,
+            0.10207635909318924,
+            0.05188560485839844,
+            0.06643590331077576,
+            0.053361926227808
+          ],
+          "emo_top": "anticipation",
+          "emo_conf": 0.506657063961029,
+          "emo_score": 0.506657063961029,
+          "elapsed_time": 0.12514710426330566
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_transition",
+      "user": "是啊，要是有什么办法就好了。",
+      "agent": "AER",
+      "response": "这种希望能找到出路，但又感觉无能为力的心情，一定很难受吧。",
+      "emotion": {
+        "label": "joy",
+        "score": 0.17668797075748444,
+        "details": {
+          "emo8_dist": [
+            0.17668797075748444,
+            0.1673499196767807,
+            0.11209487915039062,
+            0.0757552981376648,
+            0.1266166716814041,
+            0.10089897364377975,
+            0.11742643266916275,
+            0.12316984683275223
+          ],
+          "emo_top": "joy",
+          "emo_conf": 0.17668797075748444,
+          "emo_score": 0.17668797075748444,
+          "elapsed_time": 0.02446746826171875
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_1",
+      "user": "我还真没想过，回头查查。",
+      "agent": "CER",
+      "response": "在打工和学习之间，现在有了一个新的思路啊。",
+      "emotion": {
+        "label": "joy",
+        "score": 0.1762271672487259,
+        "details": {
+          "emo8_dist": [
+            0.1762271672487259,
+            0.15397745370864868,
+            0.11186002194881439,
+            0.06453245133161545,
+            0.1272948533296585,
+            0.11167953163385391,
+            0.14359422028064728,
+            0.11083438247442245
+          ],
+          "emo_top": "joy",
+          "emo_conf": 0.1762271672487259,
+          "emo_score": 0.1762271672487259,
+          "elapsed_time": 0.1126866340637207
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_2",
+      "user": "谢谢你，和你聊完感觉好多了。",
+      "agent": "CER",
+      "response": "是不是因为真的很想把学业搞好，所以当发现有别的可能性时，感觉压力一下子小了很多？",
+      "emotion": {
+        "label": "joy",
+        "score": 0.1817660927772522,
+        "details": {
+          "emo8_dist": [
+            0.1817660927772522,
+            0.17469730973243713,
+            0.13452357053756714,
+            0.06369680911302567,
+            0.11376464366912842,
+            0.08911143243312836,
+            0.13973462581634521,
+            0.10270550847053528
+          ],
+          "emo_top": "joy",
+          "emo_conf": 0.1817660927772522,
+          "emo_score": 0.1817660927772522,
+          "elapsed_time": 0.05803203582763672
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    }
+  ],
+  "quality_analysis": {
+    "naturalness_score": 60.0,
+    "repetition_issues": [],
+    "emotion_tracking": [
+      {
+        "stage": "aer_1",
+        "emotion": "sadness",
+        "score": 0.3864121437072754
+      },
+      {
+        "stage": "aer_2",
+        "emotion": "anticipation",
+        "score": 0.7763853669166565
+      },
+      {
+        "stage": "aer_3",
+        "emotion": "anticipation",
+        "score": 0.506657063961029
+      },
+      {
+        "stage": "aer_transition",
+        "emotion": "joy",
+        "score": 0.17668797075748444
+      },
+      {
+        "stage": "cer_1",
+        "emotion": "joy",
+        "score": 0.1762271672487259
+      },
+      {
+        "stage": "cer_2",
+        "emotion": "joy",
+        "score": 0.1817660927772522
+      }
+    ],
+    "rag_usage": [
+      {
+        "stage": "aer_1",
+        "has_content": false
+      },
+      {
+        "stage": "aer_2",
+        "has_content": false
+      },
+      {
+        "stage": "aer_3",
+        "has_content": false
+      },
+      {
+        "stage": "aer_transition",
+        "has_content": false
+      },
+      {
+        "stage": "cer_1",
+        "has_content": false
+      },
+      {
+        "stage": "cer_2",
+        "has_content": false
+      }
+    ],
+    "stage_completion": [
+      {
+        "stage": "aer_1",
+        "completed": true
+      },
+      {
+        "stage": "aer_2",
+        "completed": true
+      },
+      {
+        "stage": "aer_3",
+        "completed": true
+      },
+      {
+        "stage": "aer_transition",
+        "completed": true
+      },
+      {
+        "stage": "cer_1",
+        "completed": true
+      },
+      {
+        "stage": "cer_2",
+        "completed": true
+      }
+    ]
+  }
+}

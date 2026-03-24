@@ -1,0 +1,283 @@
+{
+  "session_id": "test_20260324_102139",
+  "language": "zh",
+  "topic": "academic",
+  "subtopic": "exam_anxiety",
+  "turns": [
+    {
+      "stage": "aer_1",
+      "user": "下周有数学期末考试，我特别焦虑。学了很多但成绩还是上不去...",
+      "agent": "AER",
+      "response": "能感受到你的焦虑。现在心里什么感觉？",
+      "emotion": {
+        "label": "joy",
+        "score": 0.4572536051273346,
+        "details": {
+          "emo8_dist": [
+            0.4572536051273346,
+            0.08277342468500137,
+            0.12251965701580048,
+            0.04064229875802994,
+            0.06989385932683945,
+            0.0562615767121315,
+            0.06933315843343735,
+            0.1013224720954895
+          ],
+          "emo_top": "joy",
+          "emo_conf": 0.4572536051273346,
+          "emo_score": 0.4572536051273346,
+          "elapsed_time": 0.24784469604492188
+        }
+      },
+      "rag_used": false,
+      "quality_issues": [
+        "回复过短"
+      ]
+    },
+    {
+      "stage": "aer_2",
+      "user": "对，特别是应用题完全不会做，非常着急。",
+      "agent": "AER",
+      "response": "心里很慌吧。这种感觉是怎样的？",
+      "emotion": {
+        "label": "sadness",
+        "score": 0.34756040573120117,
+        "details": {
+          "emo8_dist": [
+            0.08357208222150803,
+            0.34756040573120117,
+            0.07284338772296906,
+            0.06458324193954468,
+            0.08614104986190796,
+            0.14418268203735352,
+            0.11220134794712067,
+            0.08891581743955612
+          ],
+          "emo_top": "sadness",
+          "emo_conf": 0.34756040573120117,
+          "emo_score": 0.34756040573120117,
+          "elapsed_time": 0.08933496475219727
+        }
+      },
+      "rag_used": false,
+      "quality_issues": [
+        "回复过短"
+      ]
+    },
+    {
+      "stage": "aer_3",
+      "user": "上次期中考试基础题还能做，但应用题丢了很多分，时间也不够。",
+      "agent": "AER",
+      "response": "感觉很挫败吧。现在心里是什么感觉？",
+      "emotion": {
+        "label": "sadness",
+        "score": 0.18776631355285645,
+        "details": {
+          "emo8_dist": [
+            0.17674066126346588,
+            0.18776631355285645,
+            0.13583271205425262,
+            0.06944463402032852,
+            0.10589808970689774,
+            0.09388408809900284,
+            0.10456046462059021,
+            0.12587302923202515
+          ],
+          "emo_top": "sadness",
+          "emo_conf": 0.18776631355285645,
+          "emo_score": 0.18776631355285645,
+          "elapsed_time": 0.04815936088562012
+        }
+      },
+      "rag_used": false,
+      "quality_issues": [
+        "回复过短"
+      ]
+    },
+    {
+      "stage": "aer_transition",
+      "user": "是啊，但我不知道具体该怎么做。",
+      "agent": "AER",
+      "response": "我理解这种不知道该怎么办的无助感。\n\n需要我切换到CER（认知共情机器人）模式，和你一起梳理一下具体情况吗？",
+      "emotion": {
+        "label": "joy",
+        "score": 0.9182872176170349,
+        "details": {
+          "emo8_dist": [
+            0.9182872176170349,
+            0.008482593111693859,
+            0.036893170326948166,
+            0.004714657552540302,
+            0.0075501990504562855,
+            0.005368782673031092,
+            0.008440352976322174,
+            0.01026301272213459
+          ],
+          "emo_top": "joy",
+          "emo_conf": 0.9182872176170349,
+          "emo_score": 0.9182872176170349,
+          "elapsed_time": 0.04655122756958008
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_1",
+      "user": "好的，我试试看。",
+      "agent": "CER",
+      "response": "基础题能应付，但应用题这里卡住了，既丢分又花时间。是这样的情况啊。",
+      "emotion": {
+        "label": "sadness",
+        "score": 0.3695620000362396,
+        "details": {
+          "emo8_dist": [
+            0.0350961834192276,
+            0.3695620000362396,
+            0.05932729318737984,
+            0.05918847396969795,
+            0.11436907947063446,
+            0.14078031480312347,
+            0.15288038551807404,
+            0.06879623234272003
+          ],
+          "emo_top": "sadness",
+          "emo_conf": 0.3695620000362396,
+          "emo_score": 0.3695620000362396,
+          "elapsed_time": 0.10736250877380371
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_2",
+      "user": "谢谢你，我会一步步来的。",
+      "agent": "CER",
+      "response": "是不是因为很想提高总成绩，所以在应用题这个失分点上感到特别焦虑和棘手？",
+      "emotion": {
+        "label": "sadness",
+        "score": 0.21410420536994934,
+        "details": {
+          "emo8_dist": [
+            0.07073754817247391,
+            0.21410420536994934,
+            0.09023340791463852,
+            0.08665113151073456,
+            0.1259240210056305,
+            0.1665540188550949,
+            0.1433640420436859,
+            0.10243165493011475
+          ],
+          "emo_top": "sadness",
+          "emo_conf": 0.21410420536994934,
+          "emo_score": 0.21410420536994934,
+          "elapsed_time": 0.09972143173217773
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    }
+  ],
+  "quality_analysis": {
+    "naturalness_score": 45.0,
+    "repetition_issues": [
+      {
+        "stage": "aer_1",
+        "issue": "回复过短"
+      },
+      {
+        "stage": "aer_2",
+        "issue": "回复过短"
+      },
+      {
+        "stage": "aer_3",
+        "issue": "回复过短"
+      }
+    ],
+    "emotion_tracking": [
+      {
+        "stage": "aer_1",
+        "emotion": "joy",
+        "score": 0.4572536051273346
+      },
+      {
+        "stage": "aer_2",
+        "emotion": "sadness",
+        "score": 0.34756040573120117
+      },
+      {
+        "stage": "aer_3",
+        "emotion": "sadness",
+        "score": 0.18776631355285645
+      },
+      {
+        "stage": "aer_transition",
+        "emotion": "joy",
+        "score": 0.9182872176170349
+      },
+      {
+        "stage": "cer_1",
+        "emotion": "sadness",
+        "score": 0.3695620000362396
+      },
+      {
+        "stage": "cer_2",
+        "emotion": "sadness",
+        "score": 0.21410420536994934
+      }
+    ],
+    "rag_usage": [
+      {
+        "stage": "aer_1",
+        "has_content": false
+      },
+      {
+        "stage": "aer_2",
+        "has_content": false
+      },
+      {
+        "stage": "aer_3",
+        "has_content": false
+      },
+      {
+        "stage": "aer_transition",
+        "has_content": false
+      },
+      {
+        "stage": "cer_1",
+        "has_content": false
+      },
+      {
+        "stage": "cer_2",
+        "has_content": false
+      }
+    ],
+    "stage_completion": [
+      {
+        "stage": "aer_1",
+        "completed": true
+      },
+      {
+        "stage": "aer_2",
+        "completed": true
+      },
+      {
+        "stage": "aer_3",
+        "completed": true
+      },
+      {
+        "stage": "aer_transition",
+        "completed": true
+      },
+      {
+        "stage": "cer_1",
+        "completed": true
+      },
+      {
+        "stage": "cer_2",
+        "completed": true
+      }
+    ]
+  }
+}

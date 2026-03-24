@@ -1,0 +1,54 @@
+# .gitignore for Robot A Demo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Logs
+logs/*.jsonl
+*.log
+
+# Outputs
+outputs/*.wav
+recordings/*.wav
+test_audio/*.wav
+test_audio/*.aiff
+
+# Data
+*.db
+*.sqlite
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Model cache (HuggingFace)
+# Uncomment if you want to ignore cached models
+# ~/.cache/huggingface/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Distribution
+dist/
+build/
+*.egg-info/

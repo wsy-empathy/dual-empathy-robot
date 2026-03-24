@@ -1,0 +1,264 @@
+{
+  "session_id": "test_20260324_101842",
+  "language": "ja",
+  "topic": "financial",
+  "subtopic": "cost_burden",
+  "turns": [
+    {
+      "stage": "aer_1",
+      "user": "最近、学費とアルバイトのバランスで悩んでいます。",
+      "agent": "AER",
+      "response": "それは大変だね。なんだかうんざりするような気持ちかな。心の中はどんな感じ？",
+      "emotion": {
+        "label": "disgust",
+        "score": 0.8218321204185486,
+        "details": {
+          "emo8_dist": [
+            0.010348591022193432,
+            0.04497160017490387,
+            0.009464227594435215,
+            0.012823290191590786,
+            0.05696694180369377,
+            0.02392466366291046,
+            0.8218321204185486,
+            0.01966858096420765
+          ],
+          "emo_top": "disgust",
+          "emo_conf": 0.8218321204185486,
+          "emo_score": 0.8218321204185486,
+          "elapsed_time": 0.1151132583618164
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_2",
+      "user": "はい、学費を自分で稼がないといけないので、週4日バイトしているんですが、勉強時間が足りなくて...",
+      "agent": "AER",
+      "response": "自分で学費を稼ぎながら頑張っているのは、本当に立派なことだと思うよ。今はどんな思いでいるのかな？",
+      "emotion": {
+        "label": "sadness",
+        "score": 0.26646947860717773,
+        "details": {
+          "emo8_dist": [
+            0.07234717160463333,
+            0.26646947860717773,
+            0.1800343245267868,
+            0.04977390170097351,
+            0.10039231926202774,
+            0.1101340726017952,
+            0.10675224661827087,
+            0.11409644037485123
+          ],
+          "emo_top": "sadness",
+          "emo_conf": 0.26646947860717773,
+          "emo_score": 0.26646947860717773,
+          "elapsed_time": 0.10350561141967773
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_3",
+      "user": "親からの援助は少しだけで、基本的に自分で学費を払っています。疲れて授業に集中できないこともあります。",
+      "agent": "AER",
+      "response": "心も体も疲れちゃうよね。一人で抱えて、本当にすごいと思う。その疲れの中で、どんな気持ちが一番大きいかな？",
+      "emotion": {
+        "label": "joy",
+        "score": 0.2847194969654083,
+        "details": {
+          "emo8_dist": [
+            0.2847194969654083,
+            0.11141324788331985,
+            0.18821841478347778,
+            0.06491758674383163,
+            0.08220739662647247,
+            0.07499401271343231,
+            0.09076455980539322,
+            0.10276530683040619
+          ],
+          "emo_top": "joy",
+          "emo_conf": 0.2847194969654083,
+          "emo_score": 0.2847194969654083,
+          "elapsed_time": 0.13046622276306152
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_transition",
+      "user": "そうですね。何か方法があればいいんですけど。",
+      "agent": "AER",
+      "response": "何とかしたいって気持ち、すごく伝わってくるよ。もしよかったら、その状況を整理するお手伝いもできるけど、どうかな？",
+      "emotion": {
+        "label": "joy",
+        "score": 0.34788140654563904,
+        "details": {
+          "emo8_dist": [
+            0.34788140654563904,
+            0.0959978699684143,
+            0.14070318639278412,
+            0.07878869771957397,
+            0.07889153808355331,
+            0.06991636008024216,
+            0.08049614727497101,
+            0.10732478648424149
+          ],
+          "emo_top": "joy",
+          "emo_conf": 0.34788140654563904,
+          "emo_score": 0.34788140654563904,
+          "elapsed_time": 0.1285264492034912
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_1",
+      "user": "それは考えたことありませんでした。調べてみます。",
+      "agent": "CER",
+      "response": "バイトと学業の両立で、時間のやりくりに苦労している状況なんだね。",
+      "emotion": {
+        "label": "sadness",
+        "score": 0.2482866793870926,
+        "details": {
+          "emo8_dist": [
+            0.07571123540401459,
+            0.2482866793870926,
+            0.07615246623754501,
+            0.06957100331783295,
+            0.13075590133666992,
+            0.19919218122959137,
+            0.1060071587562561,
+            0.09432338178157806
+          ],
+          "emo_top": "sadness",
+          "emo_conf": 0.2482866793870926,
+          "emo_score": 0.2482866793870926,
+          "elapsed_time": 0.08819580078125
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_2",
+      "user": "ありがとうございます。相談してよかったです。",
+      "agent": "CER",
+      "response": "もしかして、学業をきちんとやり遂げたいという思いが強いからこそ、授業に集中しきれない現状に歯がゆさを感じているのかな？",
+      "emotion": {
+        "label": "trust",
+        "score": 0.16745491325855255,
+        "details": {
+          "emo8_dist": [
+            0.1482459455728531,
+            0.11400125920772552,
+            0.09723320603370667,
+            0.12148140370845795,
+            0.12224267423152924,
+            0.10424960404634476,
+            0.12509100139141083,
+            0.16745491325855255
+          ],
+          "emo_top": "trust",
+          "emo_conf": 0.16745491325855255,
+          "emo_score": 0.16745491325855255,
+          "elapsed_time": 0.07778096199035645
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    }
+  ],
+  "quality_analysis": {
+    "naturalness_score": 60.0,
+    "repetition_issues": [],
+    "emotion_tracking": [
+      {
+        "stage": "aer_1",
+        "emotion": "disgust",
+        "score": 0.8218321204185486
+      },
+      {
+        "stage": "aer_2",
+        "emotion": "sadness",
+        "score": 0.26646947860717773
+      },
+      {
+        "stage": "aer_3",
+        "emotion": "joy",
+        "score": 0.2847194969654083
+      },
+      {
+        "stage": "aer_transition",
+        "emotion": "joy",
+        "score": 0.34788140654563904
+      },
+      {
+        "stage": "cer_1",
+        "emotion": "sadness",
+        "score": 0.2482866793870926
+      },
+      {
+        "stage": "cer_2",
+        "emotion": "trust",
+        "score": 0.16745491325855255
+      }
+    ],
+    "rag_usage": [
+      {
+        "stage": "aer_1",
+        "has_content": false
+      },
+      {
+        "stage": "aer_2",
+        "has_content": false
+      },
+      {
+        "stage": "aer_3",
+        "has_content": false
+      },
+      {
+        "stage": "aer_transition",
+        "has_content": false
+      },
+      {
+        "stage": "cer_1",
+        "has_content": false
+      },
+      {
+        "stage": "cer_2",
+        "has_content": false
+      }
+    ],
+    "stage_completion": [
+      {
+        "stage": "aer_1",
+        "completed": true
+      },
+      {
+        "stage": "aer_2",
+        "completed": true
+      },
+      {
+        "stage": "aer_3",
+        "completed": true
+      },
+      {
+        "stage": "aer_transition",
+        "completed": true
+      },
+      {
+        "stage": "cer_1",
+        "completed": true
+      },
+      {
+        "stage": "cer_2",
+        "completed": true
+      }
+    ]
+  }
+}

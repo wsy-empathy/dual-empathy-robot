@@ -1,0 +1,264 @@
+{
+  "session_id": "test_20260324_101721",
+  "language": "ja",
+  "topic": "academic",
+  "subtopic": "exam_anxiety",
+  "turns": [
+    {
+      "stage": "aer_1",
+      "user": "来週、数学の期末試験があって、とても不安です。勉強してもなかなか点数が上がらなくて...",
+      "agent": "AER",
+      "response": "不安な気持ち、よく伝わってきます。今どんな感じ？",
+      "emotion": {
+        "label": "joy",
+        "score": 0.9050251841545105,
+        "details": {
+          "emo8_dist": [
+            0.9050251841545105,
+            0.02093415893614292,
+            0.012386316433548927,
+            0.009293641895055771,
+            0.009060519747436047,
+            0.01152699813246727,
+            0.013498428277671337,
+            0.018274733796715736
+          ],
+          "emo_top": "joy",
+          "emo_conf": 0.9050251841545105,
+          "emo_score": 0.9050251841545105,
+          "elapsed_time": 0.3683602809906006
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_2",
+      "user": "はい、特に応用問題が全然できなくて、焦っています。",
+      "agent": "AER",
+      "response": "一生懸命だからこそ、焦ってしまいますよね。もう少しその気持ちについて聞いてもいい？",
+      "emotion": {
+        "label": "surprise",
+        "score": 0.43877336382865906,
+        "details": {
+          "emo8_dist": [
+            0.10808075219392776,
+            0.1057661697268486,
+            0.04125038534402847,
+            0.43877336382865906,
+            0.056371740996837616,
+            0.11619150638580322,
+            0.06680549681186676,
+            0.06676054000854492
+          ],
+          "emo_top": "surprise",
+          "emo_conf": 0.43877336382865906,
+          "emo_score": 0.43877336382865906,
+          "elapsed_time": 0.025859832763671875
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_3",
+      "user": "前回の中間試験では、基礎問題は解けたんですが、応用で大きく失点しました。時間も足りなかったです。",
+      "agent": "AER",
+      "response": "その時のことを思うと、もどかしい気持ちになりますよね。今、そのことを思い出してどんな気持ち？",
+      "emotion": {
+        "label": "sadness",
+        "score": 0.5522454380989075,
+        "details": {
+          "emo8_dist": [
+            0.04013548046350479,
+            0.5522454380989075,
+            0.04854108765721321,
+            0.04112458974123001,
+            0.06910762935876846,
+            0.10276063531637192,
+            0.09048875421285629,
+            0.05559635907411575
+          ],
+          "emo_top": "sadness",
+          "emo_conf": 0.5522454380989075,
+          "emo_score": 0.5522454380989075,
+          "elapsed_time": 0.11127519607543945
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "aer_transition",
+      "user": "そうですね。でも具体的にどうすればいいのか分からなくて。",
+      "agent": "AER",
+      "response": "どうすればいいか分からなくて、心細い気持ちなんですね。ここからは、問題解決のサポートが得意なCERが、あなたの状況を整理するお手伝いをしますね。",
+      "emotion": {
+        "label": "anticipation",
+        "score": 0.8482803702354431,
+        "details": {
+          "emo8_dist": [
+            0.035548094660043716,
+            0.029891498386859894,
+            0.8482803702354431,
+            0.008489496074616909,
+            0.01959378644824028,
+            0.017805205658078194,
+            0.017406338825821877,
+            0.022985262796282768
+          ],
+          "emo_top": "anticipation",
+          "emo_conf": 0.8482803702354431,
+          "emo_score": 0.8482803702354431,
+          "elapsed_time": 0.1196892261505127
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_1",
+      "user": "はい、やってみます。",
+      "agent": "CER",
+      "response": "基礎はできるのに応用で点数が取れず、どう対策すればいいか分からなくなっている状況なんだね。",
+      "emotion": {
+        "label": "joy",
+        "score": 0.9941496849060059,
+        "details": {
+          "emo8_dist": [
+            0.9941496849060059,
+            0.0007399198366329074,
+            0.00128727569244802,
+            0.0005247194785624743,
+            0.0006313433987088501,
+            0.0005512894131243229,
+            0.0009616611641831696,
+            0.0011541154235601425
+          ],
+          "emo_top": "joy",
+          "emo_conf": 0.9941496849060059,
+          "emo_score": 0.9941496849060059,
+          "elapsed_time": 0.11281394958496094
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    },
+    {
+      "stage": "cer_2",
+      "user": "ありがとうございます。少しずつやってみます。",
+      "agent": "CER",
+      "response": "もしかして、「次こそは応用問題でしっかり点を取りたい」という気持ちがあるからこそ、何から手をつければいいか分からなくなっているのかな？",
+      "emotion": {
+        "label": "joy",
+        "score": 0.39127156138420105,
+        "details": {
+          "emo8_dist": [
+            0.39127156138420105,
+            0.11103799939155579,
+            0.16636961698532104,
+            0.04287862032651901,
+            0.07619588822126389,
+            0.05896727368235588,
+            0.05912604555487633,
+            0.09415303170681
+          ],
+          "emo_top": "joy",
+          "emo_conf": 0.39127156138420105,
+          "emo_score": 0.39127156138420105,
+          "elapsed_time": 0.0704183578491211
+        }
+      },
+      "rag_used": false,
+      "quality_issues": []
+    }
+  ],
+  "quality_analysis": {
+    "naturalness_score": 60.0,
+    "repetition_issues": [],
+    "emotion_tracking": [
+      {
+        "stage": "aer_1",
+        "emotion": "joy",
+        "score": 0.9050251841545105
+      },
+      {
+        "stage": "aer_2",
+        "emotion": "surprise",
+        "score": 0.43877336382865906
+      },
+      {
+        "stage": "aer_3",
+        "emotion": "sadness",
+        "score": 0.5522454380989075
+      },
+      {
+        "stage": "aer_transition",
+        "emotion": "anticipation",
+        "score": 0.8482803702354431
+      },
+      {
+        "stage": "cer_1",
+        "emotion": "joy",
+        "score": 0.9941496849060059
+      },
+      {
+        "stage": "cer_2",
+        "emotion": "joy",
+        "score": 0.39127156138420105
+      }
+    ],
+    "rag_usage": [
+      {
+        "stage": "aer_1",
+        "has_content": false
+      },
+      {
+        "stage": "aer_2",
+        "has_content": false
+      },
+      {
+        "stage": "aer_3",
+        "has_content": false
+      },
+      {
+        "stage": "aer_transition",
+        "has_content": false
+      },
+      {
+        "stage": "cer_1",
+        "has_content": false
+      },
+      {
+        "stage": "cer_2",
+        "has_content": false
+      }
+    ],
+    "stage_completion": [
+      {
+        "stage": "aer_1",
+        "completed": true
+      },
+      {
+        "stage": "aer_2",
+        "completed": true
+      },
+      {
+        "stage": "aer_3",
+        "completed": true
+      },
+      {
+        "stage": "aer_transition",
+        "completed": true
+      },
+      {
+        "stage": "cer_1",
+        "completed": true
+      },
+      {
+        "stage": "cer_2",
+        "completed": true
+      }
+    ]
+  }
+}
