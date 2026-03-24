@@ -4,7 +4,8 @@ import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { Language, translations } from './i18n';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+// 在 Vercel 上使用相对路径，本地开发使用 localhost:8000
+const API_URL = process.env.NEXT_PUBLIC_API_URL || (typeof window !== 'undefined' && window.location.hostname === 'localhost' ? 'http://localhost:8000' : '');
 
 interface Message {
   role: 'user' | 'AER' | 'CER' | 'system';

@@ -1,20 +1,22 @@
 {
   "version": 2,
   "name": "dual-empathy-robot",
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/.next",
   "builds": [
     {
       "src": "frontend/package.json",
       "use": "@vercel/next"
     },
     {
-      "src": "api/*.py",
+      "src": "api/index.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/api/$1"
+      "dest": "/api/index.py"
     },
     {
       "src": "/(.*)",
@@ -23,10 +25,5 @@
   ],
   "env": {
     "GEMINI_API_KEY": "@gemini_api_key"
-  },
-  "build": {
-    "env": {
-      "PYTHON_VERSION": "3.11"
-    }
   }
 }
