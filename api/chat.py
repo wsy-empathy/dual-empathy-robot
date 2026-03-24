@@ -97,14 +97,75 @@ async def chat(request: ChatRequest):
 
 
 @app.post("/api/session/create")
-async def create_session(language: str = "ja"):
+async def create_session(request: Request):
     """创建会话"""
     import uuid
+    body = await request.json()
+    language = body.get("user_id", "ja")
     session_id = str(uuid.uuid4())
+    
+    # 返回欢迎消息
+    welcome_messages = {
+        "ja": "最近、気がかりなことがあれば聞かせてもらえますか？授業のこと、進路のこと、お金のこと、人との関係のことなど、どれからでも大丈夫です。",
+        "zh": "最近有什么让你担心的事情吗？无论是课程、未来规划、经济问题还是人际关系，都可以和我聊聊。"
+    }
+    
     return {
         "session_id": session_id,
+        "message": welcome_messages.get(language, welcome_messages["ja"]),
         "language": language,
         "created_at": "2026-03-24T00:00:00Z"
+    }
+
+
+@app.post("/api/session/select-topic")
+async def select_topic(request: Request):
+    """选择主题"""
+    body = await request.json()
+    topic_key = body.get("topic_key", "")
+    
+    subtopics_map = {
+        "academic": [
+            ["exam_anxiety", "試験不安", "考试焦虑"],
+            ["study_pace", "学習ペース", "学习节奏"],
+            ["follow_content", "授業理解", "课程理解"]
+        ],
+        "financial": [
+            ["cost_burden", "経済的負担", "经济负担"],
+            ["work_study_balance", "バイトと学業", "打工与学业"],
+            ["financial_anxiety", "お金の不安", "经济焦虑"]
+        ],
+        "relationship": [
+            ["making_friends", "友達作り", "交朋友"],
+            ["no_confidant", "相談相手がいない", "没有倾诉对象"],
+            ["interaction_issues", "コミュニケーション", "沟通问题"]
+        ],
+        "future": [
+            ["unclear_goals", "目標が不明確", "目标不明确"],
+            ["career_choice", "進路選択", "职业选择"],
+            ["preparation", "就活準備", "就业准备"]
+        ]
+    }
+    
+    return {
+        "message": "具体的にはどの点が気になりますか？" if body.get("language", "ja") == "ja" else "具体来说，哪方面让你困扰？",
+        "subtopics": subtopics_map.get(topic_key, [])
+    }
+
+
+@app.post("/api/session/select-subtopic")
+async def select_subtopic(request: Request):
+    """选择子主题"""
+    body = await request.json()
+    language = body.get("language", "ja")
+    
+    start_messages = {
+        "ja": "それでは、あなたの気持ちを聞かせてください。",
+        "zh": "那么，请告诉我你的感受吧。"
+    }
+    
+    return {
+        "message": start_messages.get(language, start_messages["ja"])
     }
 
 
