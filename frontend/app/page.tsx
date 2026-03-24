@@ -4,8 +4,10 @@ import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { Language, translations } from './i18n';
 
-// 使用相对路径，Vercel 和本地都能正常工作
-const API_URL = '';
+// 支持环境变量配置后端地址
+// 开发环境: NEXT_PUBLIC_API_URL=http://localhost:8000 (使用完整后端)
+// 生产环境: 留空使用 Next.js API Routes (演示版)
+const API_URL = process.env.NEXT_PUBLIC_API_URL || '';
 
 interface Message {
   role: 'user' | 'AER' | 'CER' | 'system';
@@ -186,12 +188,12 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-pink-500 flex items-center justify-center text-white font-bold text-lg shadow-md">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-pink-500 flex items-center justify-center text-white text-lg shadow-md">
               🤖
             </div>
             <div>
-              <h1 className="text-lg font-bold text-gray-800">双共情机器人</h1>
-              <p className="text-xs text-gray-500">AER 💖 + CER 🧠</p>
+              <h1 className="text-lg font-semibold text-gray-800">双共情机器人</h1>
+              <p className="text-xs text-gray-500 font-normal">AER 💖 + CER 🧠</p>
             </div>
           </div>
           
@@ -199,7 +201,7 @@ export default function Home() {
           <div className="flex gap-2 bg-gray-100 rounded-full p-1">
             <button
               onClick={() => setLanguage('ja')}
-              className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all duration-200 ${
+              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${
                 language === 'ja' 
                   ? 'bg-white text-blue-600 shadow-sm' 
                   : 'text-gray-600 hover:text-gray-800'
@@ -209,7 +211,7 @@ export default function Home() {
             </button>
             <button
               onClick={() => setLanguage('zh')}
-              className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-all duration-200 ${
+              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${
                 language === 'zh' 
                   ? 'bg-white text-blue-600 shadow-sm' 
                   : 'text-gray-600 hover:text-gray-800'
@@ -244,7 +246,7 @@ export default function Home() {
             <button
               onClick={initSession}
               disabled={isLoading}
-              className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-pink-500 text-white rounded-full font-semibold text-lg shadow-lg hover:shadow-xl hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300"
+              className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-pink-500 text-white rounded-full font-medium text-lg shadow-lg hover:shadow-xl hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300">
             >
               <span className="flex items-center space-x-2">
                 <span>{isLoading ? (language === 'ja' ? '準備中...' : '准备中...') : (language === 'ja' ? '会話を始める' : '开始对话')}</span>
@@ -255,13 +257,13 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4 mt-12 max-w-2xl w-full">
               <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-4 text-center shadow-md border border-gray-100">
                 <div className="text-3xl mb-2">💖</div>
-                <div className="text-sm font-semibold text-gray-800">AER</div>
-                <div className="text-xs text-gray-600 mt-1">{language === 'ja' ? '感情共感' : '情感共鸣'}</div>
+                <div className="text-sm font-medium text-gray-800">AER</div>
+                <div className="text-xs text-gray-600 font-normal mt-1">{language === 'ja' ? '感情共感' : '情感共鸣'}</div>
               </div>
               <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-4 text-center shadow-md border border-gray-100">
                 <div className="text-3xl mb-2">🧠</div>
-                <div className="text-sm font-semibold text-gray-800">CER</div>
-                <div className="text-xs text-gray-600 mt-1">{language === 'ja' ? '認知共感' : '认知共鸣'}</div>
+                <div className="text-sm font-medium text-gray-800">CER</div>
+                <div className="text-xs text-gray-600 font-normal mt-1">{language === 'ja' ? '認知共感' : '认知共鸣'}</div>
               </div>
             </div>
           </div>
@@ -271,8 +273,8 @@ export default function Home() {
         {stage === 'topic' && (
           <div className="max-w-2xl mx-auto space-y-6 animate-fade-in">
             <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-2">{t('selectTopic')}</h2>
-              <p className="text-gray-600 text-sm">{language === 'ja' ? 'お話ししたいテーマを選んでください' : '请选择你想聊的主题'}</p>
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">{t('selectTopic')}</h2>
+              <p className="text-gray-600 text-sm font-normal">{language === 'ja' ? 'お話ししたいテーマを選んでください' : '请选择你想聊的主题'}</p>
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -287,7 +289,7 @@ export default function Home() {
                   <div className="flex items-center space-x-4">
                     <div className="text-4xl">{getTopicEmoji(topic.key)}</div>
                     <div className="flex-1">
-                      <div className="font-bold text-gray-800 group-hover:text-blue-600 transition-colors text-lg">
+                      <div className="font-medium text-gray-800 group-hover:text-blue-600 transition-colors text-lg">
                         {topic[language]}
                       </div>
                     </div>
@@ -303,8 +305,8 @@ export default function Home() {
         {stage === 'subtopic' && (
           <div className="max-w-2xl mx-auto space-y-6 animate-fade-in">
             <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-2">{t('selectSubtopic')}</h2>
-              <p className="text-gray-600 text-sm">{language === 'ja' ? 'より具体的にお選びください' : '请选择更具体的内容'}</p>
+              <h2 className="text-2xl font-semibold text-gray-800 mb-2">{t('selectSubtopic')}</h2>
+              <p className="text-gray-600 text-sm font-normal">{language === 'ja' ? 'より具体的にお選びください' : '请选择更具体的内容'}</p>
             </div>
             
             <div className="space-y-3">
@@ -317,7 +319,7 @@ export default function Home() {
                   style={{ animationDelay: `${index * 80}ms` }}
                 >
                   <div className="flex items-center justify-between">
-                    <span className="font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
+                    <span className="font-medium text-gray-800 group-hover:text-blue-600 transition-colors">
                       {subtopic[language]}
                     </span>
                     <span className="text-gray-400 group-hover:text-blue-500 group-hover:translate-x-1 transition-all">→</span>
@@ -337,11 +339,11 @@ export default function Home() {
                 <div className="flex items-center space-x-3">
                   <div className="text-2xl">😊</div>
                   <div className="flex-1">
-                    <div className="text-sm font-semibold text-gray-700">
+                    <div className="text-sm font-medium text-gray-700">
                       {language === 'ja' ? '感情の状態' : '情绪状态'}
                     </div>
                     <div className="flex items-center space-x-2 mt-1">
-                      <span className="px-3 py-1 bg-yellow-200 rounded-full text-sm font-semibold text-yellow-800">
+                      <span className="px-3 py-1 bg-yellow-200 rounded-full text-sm font-medium text-yellow-800">
                         {emotion.label}
                       </span>
                       <span className="text-sm text-gray-600">
@@ -368,7 +370,7 @@ export default function Home() {
                           <div className="text-xl">
                             {msg.role === 'AER' ? '💖' : msg.role === 'CER' ? '🧠' : '🤖'}
                           </div>
-                          <span className={`text-xs font-bold ${
+                          <span className={`text-xs font-medium ${
                             msg.role === 'AER' ? 'text-pink-600' : msg.role === 'CER' ? 'text-blue-600' : 'text-gray-600'
                           }`}>
                             {msg.role === 'AER' ? 'AER' : msg.role === 'CER' ? 'CER' : 'System'}
@@ -394,7 +396,7 @@ export default function Home() {
                       {/* 用户头像 */}
                       {msg.role === 'user' && (
                         <div className="flex items-center justify-end space-x-2 mt-2 mr-2">
-                          <span className="text-xs font-semibold text-gray-500">{t('you')}</span>
+                          <span className="text-xs font-medium text-gray-500">{t('you')}</span>
                           <div className="text-lg">👤</div>
                         </div>
                       )}
@@ -441,7 +443,7 @@ export default function Home() {
                   <button
                     onClick={sendMessage}
                     disabled={isLoading || !inputText.trim()}
-                    className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-blue-500 to-pink-500 text-white rounded-full flex items-center justify-center hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 transition-all duration-200 font-bold text-lg"
+                    className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-blue-500 to-pink-500 text-white rounded-full flex items-center justify-center hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 transition-all duration-200 font-medium text-lg">
                   >
                     {isLoading ? '⏳' : '↑'}
                   </button>
